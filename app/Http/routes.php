@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*routing - controller - view - for bigger applications */
+Route::get('laravel_test','PagesController@welcome');
+Route::get('laravel_test/saida','PagesController@saida');
+
+
+//routing - view  - smaller applications
+ /*Route::get('/laravel_test', function ()
+{
+    return 'foo';
+    //return View::make('welcome');
+});*/
+
+?>
