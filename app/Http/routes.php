@@ -12,8 +12,8 @@
 */
 
 /*routing - controller - view - for bigger applications */
-Route::get('laravel_test','PagesController@welcome');
-Route::get('laravel_test/saida','PagesController@saida');
+Route::get('/laravel_test','PagesController@welcome');
+Route::get('/laravel_test/saida','PagesController@saida');
 
 
 //routing - view  - smaller applications
@@ -22,5 +22,14 @@ Route::get('laravel_test/saida','PagesController@saida');
     return 'foo';
     //return View::make('welcome');
 });*/
+
+
+/* how i can connect with database */
+Route::get('/laravel_test', function ()
+{
+   $posts=DB::table('posts')->get();
+   return  $posts;
+});
+
 
 ?>

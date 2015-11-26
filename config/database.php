@@ -54,10 +54,10 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => env('http://localhost:57464', 'localhost'),
-            'database'  => env('sample', 'forge'),
-            'username'  => env('saida', 'forge'),
-            'password'  => env('sai', ''),
+            'host'      => env('localhost', 'localhost'),
+            'database'  => env('ltest', 'forge'),
+            'username'  => env('root', 'forge'),
+            'password'  => env('saida', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
